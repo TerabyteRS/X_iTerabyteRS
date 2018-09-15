@@ -3,12 +3,26 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+  "engines": {
+    "node": "8.x",
+    "npm": "*"
   },
-  "author": "TerabyteRS",
-  "license": "ISC",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/TerabyteRS"
+  },
+  "keywords": [
+    "heroku",
+    "discord.js"
+  ],
+  "author": "cratermaik",
+  "license": "MIT",
+  "homepage": "https://github.com/TerabyteRS",
   "dependencies": {
-    "discord.js": "^11.4.2"
+    "discord.js": "^11.3.2"
   }
 }
