@@ -1,15 +1,15 @@
 const Discord = require("discord.js");
 const client = new Discord.Client();
-const config = require("./config.json");
 
 
 
-let prefix = 'X_';
+let prefix = process.env.PREFIX;
 
 
 
 client.on("ready", () => {
-   console.log("Estoy listo!");
+    client.user.setActivity('bot en heroku', {type: 'WATCHING'});
+    console.log('Estoy Listo!');
    client.user.setPresence( {
        status: "online",
        game: {
